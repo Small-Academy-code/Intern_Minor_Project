@@ -15,7 +15,7 @@ function App() {
       <div className="app">
         <nav>
           <div className="contact">
-            <div className="contact_phone">Phone No. : +91 897683483</div>
+            <div className="contact_phone">Phone No. : 91 897683483</div>
             <div className="contact_email">E-Mail : silver.gym@gmail.com</div>
           </div>
           <div className="nav_container">
