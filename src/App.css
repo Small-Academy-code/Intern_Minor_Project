@@ -57,14 +57,6 @@ main {
   margin: 50px;
   animation: title_animations 1s ease-in-out;
 }
-@keyframes title_animations {
-  from {
-    font-size: 0px;
-  }
-  to {
-    font-size: 120px;
-  }
-}
 .container {
   display: flex;
   justify-content: center;
@@ -265,4 +257,139 @@ li:hover{
   color: blue;
   cursor: pointer;
   text-decoration: underline;
+}
+/*Responvise*/
+
+@media only screen and (max-width: 1300px) {
+  .title{
+    font-size: 38px;
+    font-weight: 900;
+    margin-top: -200px;
+    color: white;
+  }
+  .container{
+    display: block;
+  }
+  .no_gyms, .no_cities, .no_states, .no_country{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 900;
+    margin-bottom: -20px;
+  }
+  .contact{
+    padding: 5px;
+  }
+  .contact_phone, .contact_email{
+    font-size: 15px;
+    font-weight: 900;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  nav{
+    display: none;
+  }
+  .responsive_nav{
+    background-color: #000;
+  }
+  .responsive_logo_text{
+    font-family: "Lato";
+    color: silver;
+    background-color: black;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 23px;
+    margin-right: auto;
+  }
+  .responsive_logo{
+    display: flex;
+    background-color: black;
+  }
+  .menu_bar{
+    margin-right: 12px;
+    margin-left: auto;
+  }
+  .responsive_link{
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    font-family: "Staatliches";
+    text-decoration: none;
+    margin-left: 15px;
+  }
+  .responsive_sections{
+    display: none;
+  }
+  .gyms_top_section,
+  .membership_top_section,
+  .gallery_top_section,
+  .fitnessInstitute_top_section{
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    font-family: "Lato";
+    font-size: 25px;
+    font-weight: 300;
+    padding-bottom: 3 0px;
+  }
+  h3{
+    font-size: 18px;
+    margin: 7px;
+    margin-top: 10px;
+  }
+  .activeGyms{
+    display: block;
+    justify-content: center;
+    background: none;
+  }
+  .state{
+    font-size: 22px;
+  }
+  .cities{
+    font-size: 17px;
+    margin-bottom: -40px;
+  }
+  label{
+    font-size: 16px;
+  }
+  .gyms_coming_soon{
+    width: 60%;
+    font-size: 20px;
+  }
+  .membership_form{
+    padding: 10px;
+    padding-top: 20px;
+  }
+  .membership_flex_conainer{
+    display: block;
+  }
+  .name_input, .contactInput{
+    font-size: 25px;
+  }
+  .contactInput{
+    margin-bottom: 20px;
+  }
+  select{
+    width: 90%;
+  }
+  .images{
+    grid-template-columns: auto;
+  }
+  .gallery_image{
+    width: 95%;
+  }
+  .courses_flex_container{
+    display: block;
+    text-align: center;
+  }
+  li{
+    background-color: lightblue;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+  }
+  .courses_list_1{
+    margin-bottom: -5px;
+  }
 }

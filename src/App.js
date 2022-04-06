@@ -1,6 +1,7 @@
 import React from "react"
 import "./App.css"
 import Logo from "./logo.png"
+import Menu from "./menu_bar.png"
 import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom"
 import Gyms from "./Gyms"
 import Membership from "./Membership"
@@ -15,8 +16,8 @@ function App() {
       <div className="app">
         <nav>
           <div className="contact">
-            <div className="contact_phone">Phone No. :+91 12121212</div>
-            <div className="contact_email">E-Mail : silver.gym@gmail.com</div>
+            <div className="contact_phone">+91 12121212</div>
+            <div className="contact_email">silver.gym@gmail.com</div>
           </div>
           <div className="nav_container">
             <Link to="/" onClick={() => {
@@ -30,6 +31,50 @@ function App() {
               }}>Fitness Institute</Link>
           </div>
         </nav>
+        <div className="responsive_nav">
+          <div className="contact">
+            <div className="contact_phone">+91 12121212</div>
+            <div className="contact_email">silver.gym@gmail.com</div>
+          </div>
+          <div className="nav_top" style={{display:"flex"}}>
+            <Link to="/" onClick={() => {
+              document.getElementById("main_sec").style.display = "block"
+            }} style={{
+              textDecoration:"none"
+              }}><div className="responsive_logo">
+                <div className="responsive_logo_text">Silver Gym</div>
+              </div>
+            </Link>
+            <img src={Menu} className="menu_bar" onClick={() => {
+              const x = document.getElementById("responsive_sections");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              }
+              else {
+                x.style.display = "block";
+              }
+            }} />
+          </div>  
+          <br />
+          <div className="responsive_sections" id="responsive_sections">
+            <Link to="/Gyms" className="responsive_link" onClick={() => {
+              document.getElementById("main_sec").style.display = "none";
+              document.getElementById("responsive_sections").style.display = "none";
+            }}>Gyms</Link> <br /> <br />
+            <Link to="/Membership" className="responsive_link" onClick={() => {
+              document.getElementById("main_sec").style.display = "none";
+              document.getElementById("responsive_sections").style.display = "none";
+            }}>Membership</Link> <br /> <br />
+            <Link to="/Gallery" className="responsive_link" onClick={() => {
+              document.getElementById("main_sec").style.display = "none";
+              document.getElementById("responsive_sections").style.display = "none";
+            }}>Gallery</Link> <br /> <br />
+            <Link to="/FitnessInstitute" className="responsive_link" onClick={() => {
+              document.getElementById("main_sec").style.display = "none";
+              document.getElementById("responsive_sections").style.display = "none";
+            }}>Fitness Institute</Link>  <br /> <br />
+          </div>
+          </div>
         <main id="main_sec">
           <div className="title">SILVER GYM</div>
           <div className="container">

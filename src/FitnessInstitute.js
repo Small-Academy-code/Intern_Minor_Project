@@ -1,6 +1,7 @@
 import React from "react"
 
-function FitnessInstitute() {
+function FitnessInstitute() { 
+  
   return (
     <div className="fitnessInstitute">
       <div className="fitnessInstitute_top_section">
