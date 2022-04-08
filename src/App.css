@@ -258,9 +258,15 @@ li:hover{
   cursor: pointer;
   text-decoration: underline;
 }
+.responsive_sections{
+  display: none;
+}
 /*Responvise*/
 
 @media only screen and (max-width: 1300px) {
+  .responsive_sections{
+    display: block;
+  }
   .title{
     font-size: 38px;
     font-weight: 900;
